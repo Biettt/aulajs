@@ -10,6 +10,7 @@ console.log(lerItem);
 
 
 //removendo valor
-localStorage.removeItem(key)
-
+localStorage.removeItem(key);
+//remove tudo
+localStorage.clear();
 

@@ -16,6 +16,7 @@ localStorage.clear();
 
 
 //criando objeto (recebe nome e 2 parametros, tecnicamente array)
+let keys='chave'
 let dados = {name:'Usuario', idade:20};
 localStorage.setItem(dados,JSON.stringify(dados)); //dessa forma ele vai converter a string e entender
 console.log(dados);

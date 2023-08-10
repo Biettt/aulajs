@@ -22,3 +22,23 @@ localStorage.setItem(keys,JSON.stringify(dados)); //dessa forma ele vai converte
 console.log(dados);
 
 
+//criando lista de objetos
+let listaDados=[];
+//objeto base
+function Campos(campo1){
+    this.campo1=campo1;
+}
+//botão vai disparar
+const btnEnviar = document.querySelector('#btnSubmit');
+//envio do click
+
+btnEnviar.addEventListener('click',()=>{
+    const inputCampo = document.querySelector("#campo1");
+//instacia, dizer que algo é algo com outro nome / instacia recebendo o objeto
+let info = new Campos(inputCampo.value);
+//lista de usuarios que receber do objeto
+listaDados.push(info);
+localStorage.setItem("dados",JSON.stringify(listaDados));
+});
+
+

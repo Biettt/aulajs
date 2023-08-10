@@ -14,3 +14,8 @@ localStorage.removeItem(key);
 //remove tudo
 localStorage.clear();
 
+
+//criando objeto
+let dados = {name:'Usuario', idade:20};
+localStorage.setItem(dados);
+console.log(dados);

@@ -9,3 +9,7 @@ let lerItem = localStorage.getItem(key);
 console.log(lerItem);
 
 
+//removendo valor
+localStorage.removeItem(key)
+
+
